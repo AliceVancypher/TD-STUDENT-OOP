@@ -13,6 +13,7 @@ digital_wheel digital_wheel_construct(int32_t start, int32_t end)
     INSTANTIATE(digital_wheel);
     self->start = start;
     self->end = end;
+    return self;
 }
 
 void digital_wheel_collect(digital_wheel self)
